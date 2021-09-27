@@ -1,26 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#0059a3">
-    
-    <link rel="apple-touch-icon" href="icons/apple-icon.png">  <!--ICONO PARA IOS-->
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0059a3" />
+
+    <link rel="apple-touch-icon" href="icons/apple-icon.png" />
+    <!--ICONO PARA IOS-->
     <title>POC - PWA</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="manifest" href="manifest.json" />
 
-    <link rel="manifest" href="manifest.json">
-</head>
-<body>
-    <h1>GoodBye World</h1>
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 
-    <img src="https://campus.mdp.utn.edu.ar/pluginfile.php/2/course/section/456/Fachada.jpg">
+    <!-- Styles -->
+    <link href="css/app.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <!--<h1>GoodBye World</h1>-->
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="m-4 col-md-8">
+                <div class="card pub_image">
+                <div class="card-header">
+
+                    <div class="container-avatar">
+                    <img src="images/profile.png" class="avatar"/>
+                    </div>
+                    
+
+                    <span class="data-user">
+                    <a href="https://www.instagram.com/franciscus/?hl=es">
+                        George Bergoglio
+                        <span class="color-gray">@papa_francisco</span>
+                    </a>
+                    </span>
+
+                    <span class="datetime">27/07/2021</span
+                    >
+                </div>
+
+                <div class="card-body">
+                    <div class="image-container">
+                        <a href="#">
+                            <img src="https://campus.mdp.utn.edu.ar/pluginfile.php/2/course/section/456/Fachada.jpg">
+                        </a>
+                    </div>
+
+                    <div class="description">
+                        <span class="color-gray">@papa_francisco</span>
+                        <span>Foto de mi ultima visita a la UTN Mar del Plata</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
 
     <script>
-        if('serviceWorker' in navigator){
-            navigator.serviceWorker.register('/service-worker.js');
-        }
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js");
+      }
     </script>
-</body>
+  </body>
 </html>
