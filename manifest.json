@@ -1,19 +1,18 @@
 {
   "name": "Proof of Concept",
-  "sort_name": "POC",
+  "short_name": "POC",
+  "description": "Esto es la descripcion de nuestra PWA",
   "start_url": "/?home=true",
   "icons": [
     {
       "src": "icons/manifest-icon-192.png",
       "sizes": "192x192",
-      "type": "image/png",
-      "purpose": "maskable any"
+      "type": "image/png"
     },
     {
       "src": "icons/manifest-icon-512.png",
       "sizes": "512x512",
-      "type": "image/png",
-      "purpose": "maskable any"
+      "type": "image/png"
     }
   ],
   "theme_color": "#000000",
